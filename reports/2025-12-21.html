@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宏福苑新聞週報</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!--
+  ============================================================
+  宏福苑新聞週報 — 互動式 Infographic Template
+  每週更新方式：只需替換下方 id="weekly-data" 嘅 JSON 資料塊，
+  其餘 HTML/CSS/JS 不變。關鍵字次數由收集腳本預先計算。
+  ============================================================
+-->
+<script id="weekly-data" type="application/json">
+{
+  "isDemo": false,
+  "weekLabel": "第2期・第2週",
+  "dateRange": "2025-12-15 至 2025-12-21",
+  "generatedAt": "2025-12-21",
+  "summary": "本週最重大事件為政府先後公布兩項重要措施：其一，12月18日宣布「大埔宏福苑援助基金」業主租金補助安排，業主可獲每年15萬元（共兩年、合計30萬元）租金補助及一次性5萬元搬遷補助，租戶亦可獲5萬元搬遷補助，首筆款項12月22日起發放；基金累積38億元，已動用12億元。其二，12月19日政府引用《建築物管理條例》第31條向土地審裁處申請解散宏福苑業主立案法團管委會，並委任華懋旗下合安管理有限公司為委任管理人，此乃香港特區政府首次主動啟動該法律程序。居民方面，有業主期望盡快搬回大埔居住，但憂慮區內租盤搶手、租金急升，反映火災後社區安置壓力持續。",
+  "highlights": [
+    "業主獲兩年共30萬元租金補助及5萬元搬遷補助，租戶亦獲5萬搬遷補助，首批款項12月22日起發放",
+    "援助基金累積達38億元，已動用12億元，政府強調須為重置方案預留儲備",
+    "政府申請解散宏福苑法團管委會，委任合安管理接手，為特區政府首例",
+    "有業主憂大埔租金急升，搶租競爭激烈，反映火災後區內居住壓力仍嚴峻"
+  ],
+  "keywords": [
+    {
+      "word": "業主",
+      "count": 17,
+      "articles": 7
+    },
+    {
+      "word": "補助",
+      "count": 21,
+      "articles": 5
+    },
+    {
+      "word": "租金",
+      "count": 13,
+      "articles": 6
+    },
+    {
+      "word": "搬遷",
+      "count": 12,
+      "articles": 6
+    },
+    {
+      "word": "租戶",
+      "count": 9,
+      "articles": 4
+    },
+    {
+      "word": "安置",
+      "count": 4,
+      "articles": 4
+    },
+    {
+      "word": "居民",
+      "count": 3,
+      "articles": 3
+    },
+    {
+      "word": "援助基金",
+      "count": 4,
+      "articles": 3
+    },
+    {
+      "word": "基金",
+      "count": 6,
+      "articles": 3
+    },
+    {
+      "word": "大埔",
+      "count": 5,
+      "articles": 2
+    },
+    {
+      "word": "法團",
+      "count": 3,
+      "articles": 1
+    },
+    {
+      "word": "管委會",
+      "count": 3,
+      "articles": 1
+    },
+    {
+      "word": "合安",
+      "count": 1,
+      "articles": 1
+    }
+  ],
+  "dailyCounts": [
+    {
+      "date": "12-15",
+      "news": 0,
+      "forum": 0
+    },
+    {
+      "date": "12-16",
+      "news": 0,
+      "forum": 0
+    },
+    {
+      "date": "12-17",
+      "news": 0,
+      "forum": 0
+    },
+    {
+      "date": "12-18",
+      "news": 3,
+      "forum": 0
+    },
+    {
+      "date": "12-19",
+      "news": 3,
+      "forum": 0
+    },
+    {
+      "date": "12-20",
+      "news": 0,
+      "forum": 0
+    },
+    {
+      "date": "12-21",
+      "news": 1,
+      "forum": 0
+    }
+  ],
+  "sentiment": {
+    "positive": 2,
+    "neutral": 4,
+    "negative": 1
+  },
+  "sources": [
+    {
+      "name": "港府新聞",
+      "count": 3
+    },
+    {
+      "name": "RTHK",
+      "count": 1
+    },
+    {
+      "name": "香港01",
+      "count": 1
+    },
+    {
+      "name": "大公報",
+      "count": 1
+    },
+    {
+      "name": "明報",
+      "count": 1
+    }
+  ],
+  "articles": [
+    {
+      "title": "「大埔宏福苑援助基金」推出業主租金補助及搬遷補助和租戶搬遷補助",
+      "source": "港府新聞",
+      "date": "12-18",
+      "url": "https://www.info.gov.hk/gia/general/202512/18/P2025121800796.htm",
+      "type": "新聞",
+      "sentiment": "正面",
+      "keywords": [
+        "業主",
+        "補助",
+        "租戶",
+        "援助基金"
+      ]
+    },
+    {
+      "title": "宏福苑五級火｜基金累積38億元已用12億 政府稱要用得其所",
+      "source": "RTHK",
+      "date": "12-18",
+      "url": "https://news.rthk.hk/rthk/ch/component/k2/1836653-20251218.htm",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "基金",
+        "業主",
+        "補助",
+        "租金"
+      ]
+    },
+    {
+      "title": "宏福苑大火｜一文看清業主30萬租津 與租戶一次性搬遷補助安排",
+      "source": "香港01",
+      "date": "12-18",
+      "url": "https://www.hk01.com/社會新聞/60304807/",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "業主",
+        "租金",
+        "搬遷",
+        "租戶"
+      ]
+    },
+    {
+      "title": "宏福苑業主獲30萬租津 下周起發放",
+      "source": "大公報",
+      "date": "12-19",
+      "url": "https://epaper.tkww.hk/a/202512/19/AP694462dde4b0eb9195c14923.html",
+      "type": "新聞",
+      "sentiment": "正面",
+      "keywords": [
+        "業主",
+        "租金",
+        "補助",
+        "搬遷"
+      ]
+    },
+    {
+      "title": "政府申請解散宏福苑法團管委會",
+      "source": "港府新聞",
+      "date": "12-19",
+      "url": "https://www.news.gov.hk/chi/2025/12/20251219/20251219_175345_571.html",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "法團",
+        "管委會",
+        "合安",
+        "居民"
+      ]
+    },
+    {
+      "title": "業主盼搬回大埔 憂租金升「要鬥快」",
+      "source": "明報",
+      "date": "12-19",
+      "url": "https://news.mingpao.com/pns/要聞/article/20251219/s00001/1766080547011/",
+      "type": "新聞",
+      "sentiment": "負面",
+      "keywords": [
+        "業主",
+        "大埔",
+        "租金",
+        "安置"
+      ]
+    },
+    {
+      "title": "宏福苑業主可獲租金補助",
+      "source": "港府新聞",
+      "date": "12-18",
+      "url": "https://www.news.gov.hk/chi/2025/12/20251218/20251218_170250_422.html",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "業主",
+        "租金",
+        "補助",
+        "援助基金"
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #ffffff; --ink: #1d2433; --muted: #6b7280;
+    --accent: #1f4e79; --accent-light: #e8f0f8;
+    --pos: #2e8b57; --neu: #8a94a6; --neg: #c0504d;
+    --border: #e3e6eb; --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; padding: 24px 16px 60px; }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  .demo-banner { background: #fff7e0; border: 1px solid #e6cc7a; color: #7a5c00; padding: 10px 16px; border-radius: var(--radius); margin-bottom: 16px; font-size: 14px; }
+  header { background: var(--accent); color: #fff; border-radius: var(--radius); padding: 28px 28px 22px; margin-bottom: 20px; }
+  header h1 { font-size: 26px; font-weight: 700; }
+  header .sub { opacity: .85; font-size: 14px; margin-top: 6px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .stat { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .stat .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .stat .lbl { font-size: 13px; color: var(--muted); }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin-bottom: 20px; }
+  h2 { font-size: 17px; margin-bottom: 14px; color: var(--accent); display: flex; align-items: center; gap: 8px; }
+  h2::before { content: ""; width: 4px; height: 18px; background: var(--accent); border-radius: 2px; display: inline-block; }
+  .summary p { font-size: 15px; }
+  .highlights { margin-top: 12px; }
+  .highlights li { margin-left: 20px; font-size: 14.5px; margin-bottom: 6px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }
+  .chart-box { position: relative; height: 260px; }
+  /* 關鍵字 */
+  .kw-search { width: 100%; padding: 10px 14px; font-size: 15px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 14px; outline: none; }
+  .kw-search:focus { border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 13px; padding: 8px 10px; border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr.kw-row { cursor: pointer; }
+  tr.kw-row:hover { background: var(--accent-light); }
+  tr.kw-row.active { background: var(--accent-light); font-weight: 600; }
+  .bar-bg { background: #edf0f4; border-radius: 4px; height: 10px; width: 100%; }
+  .bar-fill { background: var(--accent); height: 10px; border-radius: 4px; }
+  .kw-hint { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  /* 文章列表 */
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tab { padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); background: #fff; font-size: 13.5px; cursor: pointer; }
+  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .article { padding: 12px 4px; border-bottom: 1px solid var(--border); display: flex; gap: 12px; align-items: flex-start; }
+  .article:last-child { border-bottom: none; }
+  .article a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .article a:hover { color: var(--accent); text-decoration: underline; }
+  .meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  .badge { font-size: 12px; padding: 2px 10px; border-radius: 10px; white-space: nowrap; margin-top: 3px; }
+  .badge.正面 { background: #e6f4ec; color: var(--pos); }
+  .badge.中性 { background: #eef0f3; color: #5a6472; }
+  .badge.負面 { background: #f9ebea; color: var(--neg); }
+  .type-tag { font-size: 12px; color: var(--accent); background: var(--accent-light); padding: 1px 8px; border-radius: 4px; margin-right: 6px; }
+  .empty { color: var(--muted); font-size: 14px; padding: 16px 4px; }
+  .clear-filter { display: none; margin-left: 10px; font-size: 13px; color: var(--accent); cursor: pointer; text-decoration: underline; }
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="demo-banner" id="demoBanner">⚠️ 目前顯示為示範數據，第一次正式運行後會自動換成真實內容。</div>
+
+  <header>
+    <h1>宏福苑新聞週報</h1>
+    <div class="sub" id="headerSub"></div>
+  </header>
+
+  <div class="cards" id="statCards"></div>
+
+  <section class="summary">
+    <h2>本週摘要</h2>
+    <p id="summaryText"></p>
+    <ul class="highlights" id="highlightList"></ul>
+  </section>
+
+  <section>
+    <h2>關鍵字搜尋 <span style="font-weight:400;font-size:13px;color:var(--muted)">（當週新聞出現次數）</span></h2>
+    <input class="kw-search" id="kwSearch" type="search" placeholder="輸入關鍵字搜尋，例如：重建、賠償…">
+    <table>
+      <thead><tr>
+        <th data-sort="word">關鍵字</th>
+        <th data-sort="count">出現次數 ▾</th>
+        <th data-sort="articles">出現文章數</th>
+        <th style="width:35%"></th>
+      </tr></thead>
+      <tbody id="kwBody"></tbody>
+    </table>
+    <div class="kw-hint">提示：點擊任何關鍵字，下方文章列表會只顯示包含該關鍵字嘅文章。點擊欄位標題可排序。</div>
+  </section>
+
+  <div class="grid2">
+    <section>
+      <h2>每日新聞／討論量</h2>
+      <div class="chart-box"><canvas id="dailyChart"></canvas></div>
+    </section>
+    <section>
+      <h2>輿情傾向</h2>
+      <div class="chart-box"><canvas id="sentimentChart"></canvas></div>
+    </section>
+  </div>
+
+  <section>
+    <h2>來源分佈</h2>
+    <div class="chart-box" style="height:220px"><canvas id="sourceChart"></canvas></div>
+  </section>
+
+  <section>
+    <h2>本週文章一覽 <span class="clear-filter" id="clearFilter">清除關鍵字篩選 ✕</span></h2>
+    <div class="tabs" id="typeTabs"></div>
+    <div id="articleList"></div>
+  </section>
+
+  <footer id="footerNote"></footer>
+</div>
+
+<script>
+const D = JSON.parse(document.getElementById('weekly-data').textContent);
+const $ = id => document.getElementById(id);
+
+// ---------- Header / banner ----------
+if (!D.isDemo) $('demoBanner').style.display = 'none';
+$('headerSub').textContent = `${D.weekLabel} ｜ ${D.dateRange} ｜ 生成日期：${D.generatedAt}`;
+$('footerNote').textContent = `由 Claude 自動收集及整理 ｜ 數據截至 ${D.generatedAt} ｜ 關鍵字次數由腳本統計`;
+
+// ---------- 統計卡 ----------
+const newsCount = D.articles.filter(a => a.type === '新聞' || a.type === '專題').length;
+const forumCount = D.articles.filter(a => a.type === '論壇').length;
+const manualCount = D.articles.filter(a => a.type === '手動').length;
+const negPct = Math.round(D.sentiment.negative / (D.sentiment.positive + D.sentiment.neutral + D.sentiment.negative) * 100);
+const stats = [
+  [newsCount, '新聞／專題'],
+  [forumCount, '論壇討論串'],
+  [D.keywords.length, '追蹤關鍵字'],
+  [negPct + '%', '負面輿情比例'],
+];
+if (manualCount) stats.splice(2, 0, [manualCount, '手動加入']);
+$('statCards').innerHTML = stats.map(([n, l]) =>
+  `<div class="stat"><div class="num">${n}</div><div class="lbl">${l}</div></div>`).join('');
+
+// ---------- 摘要 ----------
+$('summaryText').textContent = D.summary;
+$('highlightList').innerHTML = (D.highlights || []).map(h => `<li>${h}</li>`).join('');
+
+// ---------- 關鍵字表（搜尋 + 排序 + 點擊篩選） ----------
+let kwSort = { key: 'count', dir: -1 };
+let activeKeyword = null;
+
+function renderKeywords() {
+  const q = $('kwSearch').value.trim().toLowerCase();
+  const max = Math.max(...D.keywords.map(k => k.count), 1);
+  const rows = D.keywords
+    .filter(k => !q || k.word.toLowerCase().includes(q))
+    .sort((a, b) => (a[kwSort.key] > b[kwSort.key] ? 1 : -1) * kwSort.dir);
+  $('kwBody').innerHTML = rows.length ? rows.map(k => `
+    <tr class="kw-row ${k.word === activeKeyword ? 'active' : ''}" data-word="${k.word}">
+      <td>${k.word}</td><td><strong>${k.count}</strong></td><td>${k.articles}</td>
+      <td><div class="bar-bg"><div class="bar-fill" style="width:${k.count / max * 100}%"></div></div></td>
+    </tr>`).join('')
+    : `<tr><td colspan="4" class="empty">搵唔到「${$('kwSearch').value}」。呢個列表只包含當週統計咗嘅關鍵字。</td></tr>`;
+  document.querySelectorAll('.kw-row').forEach(tr => tr.onclick = () => {
+    activeKeyword = activeKeyword === tr.dataset.word ? null : tr.dataset.word;
+    renderKeywords(); renderArticles();
+  });
+}
+$('kwSearch').addEventListener('input', renderKeywords);
+document.querySelectorAll('th[data-sort]').forEach(th => th.onclick = () => {
+  const k = th.dataset.sort;
+  kwSort = { key: k, dir: kwSort.key === k ? -kwSort.dir : (k === 'word' ? 1 : -1) };
+  document.querySelectorAll('th[data-sort]').forEach(t => t.textContent = t.textContent.replace(/ [▾▴]/, ''));
+  th.textContent += kwSort.dir === -1 ? ' ▾' : ' ▴';
+  renderKeywords();
+});
+
+// ---------- 文章列表（分類 tab + 關鍵字篩選） ----------
+const types = ['全部', ...new Set(D.articles.map(a => a.type))];
+let activeType = '全部';
+$('typeTabs').innerHTML = types.map(t =>
+  `<button class="tab ${t === '全部' ? 'active' : ''}" data-type="${t}">${t}</button>`).join('');
+document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
+  activeType = b.dataset.type;
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === b));
+  renderArticles();
+});
+$('clearFilter').onclick = () => { activeKeyword = null; renderKeywords(); renderArticles(); };
+
+function renderArticles() {
+  $('clearFilter').style.display = activeKeyword ? 'inline' : 'none';
+  const list = D.articles.filter(a =>
+    (activeType === '全部' || a.type === activeType) &&
+    (!activeKeyword || (a.keywords || []).includes(activeKeyword)));
+  $('articleList').innerHTML = list.length ? list.map(a => `
+    <div class="article">
+      <div style="flex:1">
+        <span class="type-tag">${a.type}</span><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a>
+        <div class="meta">${a.source} ｜ ${a.date}${(a.keywords || []).length ? ' ｜ 關鍵字：' + a.keywords.join('、') : ''}</div>
+      </div>
+      <span class="badge ${a.sentiment}">${a.sentiment}</span>
+    </div>`).join('')
+    : `<div class="empty">冇符合條件嘅文章${activeKeyword ? `（關鍵字：${activeKeyword}）` : ''}。</div>`;
+}
+
+// ---------- 圖表 ----------
+Chart.defaults.font.family = '"PingFang TC","Microsoft JhengHei",sans-serif';
+new Chart($('dailyChart'), {
+  type: 'bar',
+  data: {
+    labels: D.dailyCounts.map(d => d.date),
+    datasets: [
+      { label: '新聞／專題', data: D.dailyCounts.map(d => d.news), backgroundColor: '#1f4e79' },
+      { label: '論壇討論', data: D.dailyCounts.map(d => d.forum), backgroundColor: '#7fa8c9' }
+    ]
+  },
+  options: { maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true, ticks: { precision: 0 } } } }
+});
+new Chart($('sentimentChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['正面', '中性', '負面'],
+    datasets: [{ data: [D.sentiment.positive, D.sentiment.neutral, D.sentiment.negative],
+      backgroundColor: ['#2e8b57', '#b8c0cc', '#c0504d'] }]
+  },
+  options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+});
+new Chart($('sourceChart'), {
+  type: 'bar',
+  data: {
+    labels: D.sources.map(s => s.name),
+    datasets: [{ data: D.sources.map(s => s.count), backgroundColor: '#1f4e79' }]
+  },
+  options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { precision: 0 } } } }
+});
+
+renderKeywords();
+renderArticles();
+</script>
+</body>
+</html>
