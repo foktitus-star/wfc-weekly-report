@@ -1,0 +1,12 @@
+# 只追蹤 index.html 和 reports/YYYY-MM-DD.html
+data/
+scripts/
+template/
+site/
+inbox.md
+SKILL_*.md
+*.md
+.DS_Store
+
+# 保留舊格式的週報（有前綴）不追蹤
+reports/宏福苑週報_*

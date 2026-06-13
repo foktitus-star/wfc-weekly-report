@@ -1,1 +1,0 @@
-# wfc-weekly-report

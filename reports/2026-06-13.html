@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宏福苑新聞週報</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!--
+  ============================================================
+  宏福苑新聞週報 — 互動式 Infographic Template
+  每週更新方式：只需替換下方 id="weekly-data" 嘅 JSON 資料塊，
+  其餘 HTML/CSS/JS 不變。關鍵字次數由收集腳本預先計算。
+  ============================================================
+-->
+<script id="weekly-data" type="application/json">
+{
+  "isDemo": false,
+  "weekLabel": "2026年第25週",
+  "dateRange": "2026-06-07 至 2026-06-13",
+  "generatedAt": "2026-06-13",
+  "summary": "本週（6月7至13日）共收錄16篇新聞、評論及專題報道，焦點集中喺刑事檢控進展同業主大會期限兩條主線。最矚目係6月10日警方與廉政公署聯合起訴7人及2間公司共25項控罪，廉署詳述大維修工程中多個環節皆有人涉嫌造假，包括招標造假、工程監督造假及清洗逾4000萬元懷疑貪污得益；法庭線獨家報道控罪書首次公開168名死者名單，在庭上逐一讀出，宏昌閣81人、宏泰閣82人等，追責進入刑事程序新階段。業主大會方面，土地審裁處駁回合安申請延後召開業主大會，裁定無權處理有關申請，合安依法須最遲於6月13日（本週日）召開業主大會，居民期望就大維修基金及援助金運用作表決。另外，第五輪獨立委員會聽證會定於6月22至25日舉行，將繼續傳召涉事各方作供；聆訊次數有所調整，明報社論呼籲追責第一步要追責到底。週初6月7至8日，第四團「睇樓團」反應熱烈，何永賢透露有宏福苑街坊即場填寫接受收購建議信件，政府安置工作持續推進。",
+  "highlights": [
+    "首宗刑事起訴達成：警廉聯合起訴宏業、鴻毅董事等7人及2間公司共25項控罪，包括誤殺5項（涉168名死者）、洗黑錢4300萬及串謀詐騙；廉署揭示大維修多環節涉嫌造假",
+    "168名死者名單首次公開：法庭線報道控罪書首度列出各死者名字並在庭上逐一讀出，宏昌閣81人、宏泰閣82人等；5名被告還押，侯華健及鍾素芬獲准保釋，案押後9月2日再訊",
+    "業主大會最後期限：土審處駁回合安延後申請，特首稱相信合安會依法辦事，合安依法須最遲6月13日召開業主大會，居民期望討論重建及基金安排",
+    "第五輪聽證會6月22至25日舉行，聆訊次數有所調整，公眾可於6月8日起登記旁聽；明報社論6月11日呼籲追責到底",
+    "第四團「睇樓團」6月7至8日反應熱烈，有宏福苑街坊即場填寫接受收購建議信件；政府與市建局公布為合資格業主提供免費「過渡」服務"
+  ],
+  "keywords": [
+    {
+      "word": "起訴",
+      "count": 23,
+      "articles": 8
+    },
+    {
+      "word": "調查",
+      "count": 22,
+      "articles": 6
+    },
+    {
+      "word": "工程",
+      "count": 22,
+      "articles": 6
+    },
+    {
+      "word": "居民",
+      "count": 21,
+      "articles": 8
+    },
+    {
+      "word": "鴻毅",
+      "count": 19,
+      "articles": 6
+    },
+    {
+      "word": "業主",
+      "count": 16,
+      "articles": 5
+    },
+    {
+      "word": "宏業",
+      "count": 16,
+      "articles": 5
+    },
+    {
+      "word": "控罪",
+      "count": 13,
+      "articles": 6
+    },
+    {
+      "word": "誤殺",
+      "count": 13,
+      "articles": 6
+    },
+    {
+      "word": "廉署",
+      "count": 13,
+      "articles": 6
+    },
+    {
+      "word": "業主大會",
+      "count": 13,
+      "articles": 4
+    },
+    {
+      "word": "合安",
+      "count": 12,
+      "articles": 4
+    },
+    {
+      "word": "何永賢",
+      "count": 8,
+      "articles": 3
+    },
+    {
+      "word": "聽證會",
+      "count": 8,
+      "articles": 3
+    },
+    {
+      "word": "解說專隊",
+      "count": 7,
+      "articles": 3
+    },
+    {
+      "word": "造假",
+      "count": 7,
+      "articles": 3
+    },
+    {
+      "word": "寶田邨",
+      "count": 6,
+      "articles": 2
+    },
+    {
+      "word": "過渡服務",
+      "count": 5,
+      "articles": 2
+    },
+    {
+      "word": "獨立委員會",
+      "count": 5,
+      "articles": 4
+    },
+    {
+      "word": "市建局",
+      "count": 5,
+      "articles": 2
+    },
+    {
+      "word": "洗黑錢",
+      "count": 5,
+      "articles": 2
+    },
+    {
+      "word": "收購建議",
+      "count": 4,
+      "articles": 2
+    },
+    {
+      "word": "追責",
+      "count": 4,
+      "articles": 2
+    },
+    {
+      "word": "睇樓團",
+      "count": 3,
+      "articles": 1
+    },
+    {
+      "word": "串謀詐騙",
+      "count": 2,
+      "articles": 2
+    }
+  ],
+  "dailyCounts": [
+    {
+      "date": "06-07",
+      "news": 1,
+      "forum": 0
+    },
+    {
+      "date": "06-08",
+      "news": 2,
+      "forum": 0
+    },
+    {
+      "date": "06-09",
+      "news": 4,
+      "forum": 0
+    },
+    {
+      "date": "06-10",
+      "news": 7,
+      "forum": 0
+    },
+    {
+      "date": "06-11",
+      "news": 2,
+      "forum": 0
+    },
+    {
+      "date": "06-12",
+      "news": 0,
+      "forum": 0
+    },
+    {
+      "date": "06-13",
+      "news": 0,
+      "forum": 0
+    }
+  ],
+  "sentiment": {
+    "positive": 3,
+    "neutral": 12,
+    "negative": 1
+  },
+  "sources": [
+    {
+      "name": "星島日報",
+      "count": 2
+    },
+    {
+      "name": "無綫新聞",
+      "count": 2
+    },
+    {
+      "name": "橙新聞",
+      "count": 2
+    },
+    {
+      "name": "明報",
+      "count": 1
+    },
+    {
+      "name": "星島頭條",
+      "count": 1
+    },
+    {
+      "name": "香港電台",
+      "count": 1
+    },
+    {
+      "name": "香港01",
+      "count": 1
+    },
+    {
+      "name": "法庭線 The Witness",
+      "count": 1
+    },
+    {
+      "name": "on.cc東網",
+      "count": 1
+    },
+    {
+      "name": "Yahoo新聞/RTHK",
+      "count": 1
+    },
+    {
+      "name": "信報財經新聞",
+      "count": 1
+    },
+    {
+      "name": "Now新聞",
+      "count": 1
+    },
+    {
+      "name": "文匯報",
+      "count": 1
+    }
+  ],
+  "articles": [
+    {
+      "title": "明報社論｜大埔大火首宗刑事起訴 追責第一步要追責到底",
+      "source": "明報",
+      "date": "06-11",
+      "url": "https://news.tvb.com/tc/1176084",
+      "type": "評論",
+      "sentiment": "正面",
+      "keywords": [
+        "追責",
+        "起訴",
+        "誤殺",
+        "調查"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福苑聆訊次數將減少 新一輪聽證會本月22日當週舉行",
+      "source": "星島頭條",
+      "date": "06-11",
+      "url": "https://www.stheadline.com/zh-hans/society/3578803",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "聽證會",
+        "獨立委員會",
+        "調查"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福苑大火案 警廉聯合起訴7人2公司 涉誤殺貪污等25項控罪",
+      "source": "星島日報",
+      "date": "06-10",
+      "url": "https://www.singtaousa.com/2026/06/10/news/china/hong-fu-court-fire-corruption-charges/",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "起訴",
+        "誤殺",
+        "調查",
+        "控罪",
+        "工程"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福苑大維修工程相關公司被起訴 政府與市建局公布支援受影響業主方案",
+      "source": "星島日報",
+      "date": "06-10",
+      "url": "https://www.singtaousa.com/2026/06/10/news/china/hong-fu-court-fire-prosecution-support/",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "市建局",
+        "過渡服務",
+        "業主",
+        "工程",
+        "鴻毅",
+        "宏業"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "廉署指宏福苑大維修多環節有人涉造假 部分人涉清洗懷疑貪污得益",
+      "source": "香港電台",
+      "date": "06-10",
+      "url": "https://news.rthk.hk/rthk/ch/component/k2/1858019-20260610.htm",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "廉署",
+        "造假",
+        "鴻毅",
+        "宏業",
+        "控罪",
+        "調查"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福苑火｜宏業鴻毅董事等7人共被控25罪 當中3人涉洗黑錢4000萬",
+      "source": "香港01",
+      "date": "06-10",
+      "url": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60358819",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "起訴",
+        "誤殺",
+        "鴻毅",
+        "宏業",
+        "控罪",
+        "廉署"
+      ],
+      "mediaCategory": "網絡媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福苑｜警方及廉署起訴7人及2間公司 涉誤殺等共25項控罪",
+      "source": "無綫新聞",
+      "date": "06-10",
+      "url": "https://news.tvb.com/tc/1175959-%E5%AE%8F%E7%A6%8F%E8%8B%91%E8%AD%A6%E6%96%B9%E5%8F%8A%E5%BB%89%E7%BD%B2%E8%B5%B7%E8%A8%B47%E4%BA%BA%E5%8F%8A2%E9%96%93%E5%85%AC%E5%8F%B8%E6%B6%89%E8%AA%A4%E6%AE%BA%E7%AD%89%E5%85%B125%E9%A0%85%E6%8E%A7%E7%BD%AA",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "起訴",
+        "誤殺",
+        "廉署",
+        "控罪"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福苑大火｜宏業、鴻毅董事等7人被控誤殺、洗黑錢共25罪 168死者名單首公開",
+      "source": "法庭線 The Witness",
+      "date": "06-10",
+      "url": "https://thewitnesshk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%A4%A7%E7%81%AB-%E5%AE%8F%E6%A5%AD%E9%B4%BB%E6%AF%85%E8%91%A3%E4%BA%8B%E7%AD%897%E4%BA%BA-%E8%A2%AB%E6%8E%A7%E8%AA%A4%E6%AE%BA%E7%AD%8925/",
+      "type": "新聞",
+      "sentiment": "負面",
+      "keywords": [
+        "誤殺",
+        "洗黑錢",
+        "起訴",
+        "宏業",
+        "鴻毅",
+        "168死者"
+      ]
+    },
+    {
+      "title": "7人及2公司涉宏福苑大火被起訴25罪 宏業及鴻毅董事被控誤殺",
+      "source": "橙新聞",
+      "date": "06-10",
+      "url": "https://www.orangenews.hk/hongkong/VM7Uqg0/7%E4%BA%BA%E5%92%8C2%E5%85%AC%E5%8F%B8%E6%B6%89%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%A4%A7%E7%81%AB%E8%A2%AB%E8%B5%B7%E8%A8%B4-%E6%B6%89%E8%AA%A4%E6%AE%BA%E4%B8%B2%E8%AC%80%E8%A9%90%E9%A8%99%E7%AD%8925%E7%BD%AA.shtml",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "起訴",
+        "誤殺",
+        "串謀詐騙",
+        "廉署"
+      ]
+    },
+    {
+      "title": "宏福苑｜合安申請延長召開業主大會期限被駁回 特首稱會提供適切協助",
+      "source": "無綫新聞",
+      "date": "06-09",
+      "url": "https://news.tvb.com/tc/1175676",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "業主大會",
+        "合安",
+        "業主",
+        "調查"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "申延開宏福苑業主大會被駁回 政府稱合安研究判詞後會依法辦事",
+      "source": "on.cc東網",
+      "date": "06-09",
+      "url": "https://hk.on.cc/hk/bkn/cnt/news/20260609/bkn-20260609095738810-0609_00822_001.html",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "業主大會",
+        "合安",
+        "業主"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "合安要求押後開宏福苑業主大會遭駁回 按規定最遲6月13日召開",
+      "source": "Yahoo新聞/RTHK",
+      "date": "06-09",
+      "url": "https://hk.news.yahoo.com/%E5%90%88%E5%AE%89%E8%A6%81%E6%B1%82%E6%8A%BC%E5%BE%8C%E9%96%8B%E5%AE%8F%E7%A6%8F%E8%8B%91%E6%A5%AD%E4%B8%BB%E5%A4%A7%E6%9C%83%E9%81%AD%E9%A7%81%E5%9B%9E-%E6%8C%89%E8%A6%8F%E5%AE%9A%E6%9C%80%E9%81%B26%E6%9C%8813%E6%97%A5%E5%8F%AC%E9%96%8B-%E6%B9%AF%E5%81%89%E5%9C%93%E5%A0%B1%E9%81%93-102223205.html",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "業主大會",
+        "合安",
+        "土審處",
+        "駁回"
+      ]
+    },
+    {
+      "title": "合安申請宏福苑業主大會延期被駁回",
+      "source": "信報財經新聞",
+      "date": "06-09",
+      "url": "https://www.hkej.com/instantnews/current/article/4419342/%E5%90%88%E5%AE%89%E7%94%B3%E8%AB%8B%E5%AE%8F%E7%A6%8F%E8%8B%91%E6%A5%AD%E4%B8%BB%E5%A4%A7%E6%9C%83%E5%BB%B6%E6%9C%9F%E8%A2%AB%E9%A7%81%E5%9B%9E",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "業主大會",
+        "合安",
+        "駁回",
+        "居民"
+      ]
+    },
+    {
+      "title": "議員關注宏福苑聽證會作供官員須否進入紀律程序 楊何蓓茵指視乎調查",
+      "source": "Now新聞",
+      "date": "06-08",
+      "url": "https://news.now.com/home/local/player?newsId=649885",
+      "type": "新聞",
+      "sentiment": "中性",
+      "keywords": [
+        "聽證會",
+        "公務員",
+        "調查"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "宏福戶「睇樓團」：任意一個單位我都滿意",
+      "source": "文匯報",
+      "date": "06-08",
+      "url": "https://www.wenweipo.com/a/202606/08/AP6a25d493e4b0b49ad1be6b05.html",
+      "type": "專題",
+      "sentiment": "正面",
+      "keywords": [
+        "睇樓團",
+        "寶田邨",
+        "解說專隊",
+        "居民"
+      ],
+      "mediaCategory": "傳統媒體",
+      "origin": "本地"
+    },
+    {
+      "title": "第四團「睇樓團」反應熱烈 何永賢：有宏福苑街坊即場填收購建議信",
+      "source": "橙新聞",
+      "date": "06-07",
+      "url": "https://www.orangenews.hk/hongkong/VLqheZs/%E7%AC%AC%E5%9B%9B%E5%9C%98-%E7%9D%87%E6%A8%93%E5%9C%98-%E5%8F%8D%E6%87%89%E7%86%B1%E7%83%88-%E4%BD%95%E6%B0%B8%E8%B3%A2-%E6%9C%89%E5%AE%8F%E7%A6%8F%E8%8B%91%E8%A1%97%E5%9D%8A%E5%8D%B3%E5%A0%B4%E5%A1%AB%E6%94%B6%E8%B3%BC%E5%BB%BA%E8%AD%B0%E4%BF%A1.shtml",
+      "type": "新聞",
+      "sentiment": "正面",
+      "keywords": [
+        "睇樓團",
+        "何永賢",
+        "收購建議"
+      ],
+      "mediaCategory": "網絡媒體",
+      "origin": "本地"
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #ffffff; --ink: #1d2433; --muted: #6b7280;
+    --accent: #1f4e79; --accent-light: #e8f0f8;
+    --pos: #2e8b57; --neu: #8a94a6; --neg: #c0504d;
+    --border: #e3e6eb; --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; padding: 24px 16px 60px; }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  .demo-banner { background: #fff7e0; border: 1px solid #e6cc7a; color: #7a5c00; padding: 10px 16px; border-radius: var(--radius); margin-bottom: 16px; font-size: 14px; }
+  header { background: var(--accent); color: #fff; border-radius: var(--radius); padding: 28px 28px 22px; margin-bottom: 20px; }
+  header h1 { font-size: 26px; font-weight: 700; }
+  header .sub { opacity: .85; font-size: 14px; margin-top: 6px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .stat { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .stat .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .stat .lbl { font-size: 13px; color: var(--muted); }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin-bottom: 20px; }
+  h2 { font-size: 17px; margin-bottom: 14px; color: var(--accent); display: flex; align-items: center; gap: 8px; }
+  h2::before { content: ""; width: 4px; height: 18px; background: var(--accent); border-radius: 2px; display: inline-block; }
+  .summary p { font-size: 15px; }
+  .highlights { margin-top: 12px; }
+  .highlights li { margin-left: 20px; font-size: 14.5px; margin-bottom: 6px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }
+  .chart-box { position: relative; height: 260px; }
+  /* 關鍵字 */
+  .kw-search { width: 100%; padding: 10px 14px; font-size: 15px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 14px; outline: none; }
+  .kw-search:focus { border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 13px; padding: 8px 10px; border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr.kw-row { cursor: pointer; }
+  tr.kw-row:hover { background: var(--accent-light); }
+  tr.kw-row.active { background: var(--accent-light); font-weight: 600; }
+  .bar-bg { background: #edf0f4; border-radius: 4px; height: 10px; width: 100%; }
+  .bar-fill { background: var(--accent); height: 10px; border-radius: 4px; }
+  .kw-hint { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  /* 文章列表 */
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tab { padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); background: #fff; font-size: 13.5px; cursor: pointer; }
+  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .article { padding: 12px 4px; border-bottom: 1px solid var(--border); display: flex; gap: 12px; align-items: flex-start; }
+  .article:last-child { border-bottom: none; }
+  .article a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .article a:hover { color: var(--accent); text-decoration: underline; }
+  .meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  .badge { font-size: 12px; padding: 2px 10px; border-radius: 10px; white-space: nowrap; margin-top: 3px; }
+  .badge.正面 { background: #e6f4ec; color: var(--pos); }
+  .badge.中性 { background: #eef0f3; color: #5a6472; }
+  .badge.負面 { background: #f9ebea; color: var(--neg); }
+  .type-tag { font-size: 12px; color: var(--accent); background: var(--accent-light); padding: 1px 8px; border-radius: 4px; margin-right: 6px; }
+  .empty { color: var(--muted); font-size: 14px; padding: 16px 4px; }
+  .clear-filter { display: none; margin-left: 10px; font-size: 13px; color: var(--accent); cursor: pointer; text-decoration: underline; }
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="demo-banner" id="demoBanner">⚠️ 目前顯示為示範數據，第一次正式運行後會自動換成真實內容。</div>
+
+  <header>
+    <h1>宏福苑新聞週報</h1>
+    <div class="sub" id="headerSub"></div>
+  </header>
+
+  <div class="cards" id="statCards"></div>
+
+  <section class="summary">
+    <h2>本週摘要</h2>
+    <p id="summaryText"></p>
+    <ul class="highlights" id="highlightList"></ul>
+  </section>
+
+  <section>
+    <h2>關鍵字搜尋 <span style="font-weight:400;font-size:13px;color:var(--muted)">（當週新聞出現次數）</span></h2>
+    <input class="kw-search" id="kwSearch" type="search" placeholder="輸入關鍵字搜尋，例如：重建、賠償…">
+    <table>
+      <thead><tr>
+        <th data-sort="word">關鍵字</th>
+        <th data-sort="count">出現次數 ▾</th>
+        <th data-sort="articles">出現文章數</th>
+        <th style="width:35%"></th>
+      </tr></thead>
+      <tbody id="kwBody"></tbody>
+    </table>
+    <div class="kw-hint">提示：點擊任何關鍵字，下方文章列表會只顯示包含該關鍵字嘅文章。點擊欄位標題可排序。</div>
+  </section>
+
+  <div class="grid2">
+    <section>
+      <h2>每日新聞／討論量</h2>
+      <div class="chart-box"><canvas id="dailyChart"></canvas></div>
+    </section>
+    <section>
+      <h2>輿情傾向</h2>
+      <div class="chart-box"><canvas id="sentimentChart"></canvas></div>
+    </section>
+  </div>
+
+  <section>
+    <h2>來源分佈</h2>
+    <div class="chart-box" style="height:220px"><canvas id="sourceChart"></canvas></div>
+  </section>
+
+  <section>
+    <h2>本週文章一覽 <span class="clear-filter" id="clearFilter">清除關鍵字篩選 ✕</span></h2>
+    <div class="tabs" id="typeTabs"></div>
+    <div id="articleList"></div>
+  </section>
+
+  <footer id="footerNote"></footer>
+</div>
+
+<script>
+const D = JSON.parse(document.getElementById('weekly-data').textContent);
+const $ = id => document.getElementById(id);
+
+// ---------- Header / banner ----------
+if (!D.isDemo) $('demoBanner').style.display = 'none';
+$('headerSub').textContent = `${D.weekLabel} ｜ ${D.dateRange} ｜ 生成日期：${D.generatedAt}`;
+$('footerNote').textContent = `由 Claude 自動收集及整理 ｜ 數據截至 ${D.generatedAt} ｜ 關鍵字次數由腳本統計`;
+
+// ---------- 統計卡 ----------
+const newsCount = D.articles.filter(a => a.type === '新聞' || a.type === '專題').length;
+const forumCount = D.articles.filter(a => a.type === '論壇').length;
+const manualCount = D.articles.filter(a => a.type === '手動').length;
+const negPct = Math.round(D.sentiment.negative / (D.sentiment.positive + D.sentiment.neutral + D.sentiment.negative) * 100);
+const stats = [
+  [newsCount, '新聞／專題'],
+  [forumCount, '論壇討論串'],
+  [D.keywords.length, '追蹤關鍵字'],
+  [negPct + '%', '負面輿情比例'],
+];
+if (manualCount) stats.splice(2, 0, [manualCount, '手動加入']);
+$('statCards').innerHTML = stats.map(([n, l]) =>
+  `<div class="stat"><div class="num">${n}</div><div class="lbl">${l}</div></div>`).join('');
+
+// ---------- 摘要 ----------
+$('summaryText').textContent = D.summary;
+$('highlightList').innerHTML = (D.highlights || []).map(h => `<li>${h}</li>`).join('');
+
+// ---------- 關鍵字表（搜尋 + 排序 + 點擊篩選） ----------
+let kwSort = { key: 'count', dir: -1 };
+let activeKeyword = null;
+
+function renderKeywords() {
+  const q = $('kwSearch').value.trim().toLowerCase();
+  const max = Math.max(...D.keywords.map(k => k.count), 1);
+  const rows = D.keywords
+    .filter(k => !q || k.word.toLowerCase().includes(q))
+    .sort((a, b) => (a[kwSort.key] > b[kwSort.key] ? 1 : -1) * kwSort.dir);
+  $('kwBody').innerHTML = rows.length ? rows.map(k => `
+    <tr class="kw-row ${k.word === activeKeyword ? 'active' : ''}" data-word="${k.word}">
+      <td>${k.word}</td><td><strong>${k.count}</strong></td><td>${k.articles}</td>
+      <td><div class="bar-bg"><div class="bar-fill" style="width:${k.count / max * 100}%"></div></div></td>
+    </tr>`).join('')
+    : `<tr><td colspan="4" class="empty">搵唔到「${$('kwSearch').value}」。呢個列表只包含當週統計咗嘅關鍵字。</td></tr>`;
+  document.querySelectorAll('.kw-row').forEach(tr => tr.onclick = () => {
+    activeKeyword = activeKeyword === tr.dataset.word ? null : tr.dataset.word;
+    renderKeywords(); renderArticles();
+  });
+}
+$('kwSearch').addEventListener('input', renderKeywords);
+document.querySelectorAll('th[data-sort]').forEach(th => th.onclick = () => {
+  const k = th.dataset.sort;
+  kwSort = { key: k, dir: kwSort.key === k ? -kwSort.dir : (k === 'word' ? 1 : -1) };
+  document.querySelectorAll('th[data-sort]').forEach(t => t.textContent = t.textContent.replace(/ [▾▴]/, ''));
+  th.textContent += kwSort.dir === -1 ? ' ▾' : ' ▴';
+  renderKeywords();
+});
+
+// ---------- 文章列表（分類 tab + 關鍵字篩選） ----------
+const types = ['全部', ...new Set(D.articles.map(a => a.type))];
+let activeType = '全部';
+$('typeTabs').innerHTML = types.map(t =>
+  `<button class="tab ${t === '全部' ? 'active' : ''}" data-type="${t}">${t}</button>`).join('');
+document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
+  activeType = b.dataset.type;
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === b));
+  renderArticles();
+});
+$('clearFilter').onclick = () => { activeKeyword = null; renderKeywords(); renderArticles(); };
+
+function renderArticles() {
+  $('clearFilter').style.display = activeKeyword ? 'inline' : 'none';
+  const list = D.articles.filter(a =>
+    (activeType === '全部' || a.type === activeType) &&
+    (!activeKeyword || (a.keywords || []).includes(activeKeyword)));
+  $('articleList').innerHTML = list.length ? list.map(a => `
+    <div class="article">
+      <div style="flex:1">
+        <span class="type-tag">${a.type}</span><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a>
+        <div class="meta">${a.source} ｜ ${a.date}${(a.keywords || []).length ? ' ｜ 關鍵字：' + a.keywords.join('、') : ''}</div>
+      </div>
+      <span class="badge ${a.sentiment}">${a.sentiment}</span>
+    </div>`).join('')
+    : `<div class="empty">冇符合條件嘅文章${activeKeyword ? `（關鍵字：${activeKeyword}）` : ''}。</div>`;
+}
+
+// ---------- 圖表 ----------
+Chart.defaults.font.family = '"PingFang TC","Microsoft JhengHei",sans-serif';
+new Chart($('dailyChart'), {
+  type: 'bar',
+  data: {
+    labels: D.dailyCounts.map(d => d.date),
+    datasets: [
+      { label: '新聞／專題', data: D.dailyCounts.map(d => d.news), backgroundColor: '#1f4e79' },
+      { label: '論壇討論', data: D.dailyCounts.map(d => d.forum), backgroundColor: '#7fa8c9' }
+    ]
+  },
+  options: { maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true, ticks: { precision: 0 } } } }
+});
+new Chart($('sentimentChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['正面', '中性', '負面'],
+    datasets: [{ data: [D.sentiment.positive, D.sentiment.neutral, D.sentiment.negative],
+      backgroundColor: ['#2e8b57', '#b8c0cc', '#c0504d'] }]
+  },
+  options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+});
+new Chart($('sourceChart'), {
+  type: 'bar',
+  data: {
+    labels: D.sources.map(s => s.name),
+    datasets: [{ data: D.sources.map(s => s.count), backgroundColor: '#1f4e79' }]
+  },
+  options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { precision: 0 } } } }
+});
+
+renderKeywords();
+renderArticles();
+</script>
+</body>
+</html>
